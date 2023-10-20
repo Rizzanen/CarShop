@@ -34,6 +34,14 @@ function AddCar(props) {
 
   const addCar = () => {
     props.saveCar(car);
+    setCar({
+      brand: "",
+      model: "",
+      color: "",
+      fuel: "",
+      year: "",
+      price: "",
+    });
     handleClose();
   };
 
