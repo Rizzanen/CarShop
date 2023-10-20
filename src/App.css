@@ -17,3 +17,6 @@
 .customCell {
   font-size: 15px;
 }
+.ag-floating-filter {
+  position: absolute;
+}
