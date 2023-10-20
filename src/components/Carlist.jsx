@@ -39,6 +39,7 @@ function Carlist() {
       headerClass: "customHeader",
       cellClass: "customCell",
       floatingFilterComponentParams: { suppressFilterButton: true },
+      menuTabs: [],
     },
     {
       width: 160,
@@ -50,6 +51,7 @@ function Carlist() {
       headerClass: "customHeader",
       cellClass: "customCell",
       floatingFilterComponentParams: { suppressFilterButton: true },
+      menuTabs: [],
     },
     {
       width: 160,
@@ -61,6 +63,7 @@ function Carlist() {
       headerClass: "customHeader",
       cellClass: "customCell",
       floatingFilterComponentParams: { suppressFilterButton: true },
+      menuTabs: [],
     },
     {
       width: 160,
@@ -72,6 +75,7 @@ function Carlist() {
       headerClass: "customHeader",
       cellClass: "customCell",
       floatingFilterComponentParams: { suppressFilterButton: true },
+      menuTabs: [],
     },
     {
       width: 160,
@@ -83,6 +87,7 @@ function Carlist() {
       headerClass: "customHeader",
       cellClass: "customCell",
       floatingFilterComponentParams: { suppressFilterButton: true },
+      menuTabs: [],
     },
     {
       width: 160,
@@ -94,6 +99,7 @@ function Carlist() {
       headerClass: "customHeader",
       cellClass: "customCell",
       floatingFilterComponentParams: { suppressFilterButton: true },
+      menuTabs: [],
     },
     {
       width: 90,
@@ -105,6 +111,7 @@ function Carlist() {
       cellRendererParams: {
         onClick: (carUrl, car) => editCar(carUrl, car),
       },
+      id: "button",
     },
     {
       width: 160,
@@ -160,15 +167,7 @@ function Carlist() {
   };
 
   return (
-    <div
-      className="ag-theme-material"
-      style={{
-        height: "70vh",
-        width: "95%",
-        margin: "auto",
-        justifyContent: "center",
-      }}
-    >
+    <div className="ag-theme-material" id="aggrid">
       <AddCar saveCar={saveCar} />
       <AgGridReact
         frameworkComponents={{

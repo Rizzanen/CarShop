@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
+import "../App.css";
 
 function DeleteBtnRenderer(props) {
   const { value, onClick } = props;
@@ -11,6 +12,7 @@ function DeleteBtnRenderer(props) {
 
   return (
     <Button
+      className="deleteButton"
       variant="outlined"
       color="error"
       startIcon={<DeleteIcon />}

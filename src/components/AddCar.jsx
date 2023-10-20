@@ -48,16 +48,8 @@ function AddCar(props) {
   return (
     <div>
       <Button
-        style={{
-          marginTop: "10px",
-          marginBottom: "10px",
-          width: "100%",
-          height: "50px",
-          fontSize: "25px",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        variant="contained"
+        className="addButton"
+        variant="outlined"
         onClick={handleClickOpen}
       >
         Add car
